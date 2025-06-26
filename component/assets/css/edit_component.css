@@ -1,0 +1,37 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.edit{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+/* ========================= footer ======================== */
+.footer{
+  z-index: 1;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+  background-color: #eaeaea;
+}
+
+.footer:hover{
+  background: linear-gradient( 45deg, rgb(255, 255, 255), rgb(0, 0, 0), rgb(166, 166, 255), rgb(202, 187, 159));
+  color:white;
+}
+
+/* ========================== end footer ========================= */

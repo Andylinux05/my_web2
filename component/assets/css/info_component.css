@@ -1,0 +1,117 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ================================== header ================================= */
+
+.header {
+  z-index: 9;
+  /* opacity: 0.5; */
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+}
+
+.header h1 {
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.header button {
+  padding: 10px;
+  margin: 0 4px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ===================== end header ===================================== */
+
+/* ==================================== contaniner ====================== */
+
+.container {
+  position: relative;
+  border: 2px solid green;
+  padding: 90px 30px;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .item {
+  /* border: 2px solid black; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.item h1 {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.container img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.item-info {
+  /* border: 2px solid red; */
+  width: 700px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.info p {
+  /* border: 2px solid rgb(0, 8, 255); */
+}
+
+/* ==================== footer ========================= */
+.footer {
+  z-index: 1;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+  background-color: #eaeaea;
+}
+
+.footer:hover {
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(0, 0, 0),
+    rgb(166, 166, 255),
+    rgb(202, 187, 159)
+  );
+  color: white;
+}
+/* ========================= end footer ========================= */

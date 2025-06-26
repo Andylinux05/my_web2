@@ -1,0 +1,314 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+/* -------------- Header ------------ */
+
+.header {
+  border-bottom: 2px solid black;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background-color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.header:hover {
+  background-color: rgb(211, 211, 229);
+  /* transition: background-color 0.5s ease-in-out; */
+}
+
+.header .heading {
+  transition: color 0.4s ease-in-out;
+  padding: 7px;
+  color: black;
+}
+
+.heading:hover {
+  color: blue;
+}
+
+.header #keyword {
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  width: 40%;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px 0px black;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  font-weight: bold;
+}
+
+#keyword:hover {
+  box-shadow: inset 2px 2px 5px 0px yellow;
+  border: none;
+  transform: scale(1.05);
+}
+#keyword:focus {
+  box-shadow: inset 2px 2px 5px 0px green;
+  outline: none;
+  transform: scale(1.05);
+}
+
+.header .actions {
+  /* border: 2px solid yellow; */
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.actions .btn {
+  border-radius: 5px;
+  padding: 12px;
+  background-color: rgb(211, 211, 229);
+  transition: color 0, 5s, border 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+}
+
+.actions .btn:hover {
+  background-color: white;
+}
+
+.actions .b1:hover {
+  border: 2px solid green;
+  color: green;
+}
+
+.actions .b2:hover {
+  border: 2px solid blue;
+  color: blue;
+}
+
+.actions .b3:hover {
+  border: 2px solid red;
+  color: red;
+}
+
+.actions .b1:active {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: green;
+  color: rgb(255, 255, 255);
+}
+
+.actions .b2:active {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+
+.actions .b3:active {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+/* ------------ End header ------------ */
+
+/* =============if data kosong ========================== */
+
+.empty {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(../img/empty.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+/* ==============end if data kosong ======================== */
+
+/* ------------ Container ---------------- */
+#container {
+  /* margin-top: 55px; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  min-height: 100vh;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  transition: all 0.5s ease-in-out;
+}
+
+#container:hover {
+  background-color: rgb(211, 211, 229);
+}
+/* ============= end container ================================== */
+
+/* ================ card ================== */
+.card {
+  /* border: 2px solid red; */
+  background-color: white;
+  position: relative;
+  padding: 5px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
+  transform: scale(1.01);
+  z-index: 1;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 204, 0),
+    rgb(128, 109, 0),
+    rgb(255, 230, 0),
+    rgb(246, 255, 0)
+  );
+}
+
+.card-notif {
+  position: absolute;
+  width: 90%;
+  top: 70px;
+  left: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+}
+
+.card:hover .card-notif {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card .info,
+a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gambar {
+  border-radius: 20px 20px 20px 20px;
+  min-width: 250px;
+  max-width: 250px;
+  height: 190px;
+}
+
+.title {
+  /* border: 2px solid rgb(255, 149, 0); */
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.title h3{
+  /* border: 2px solid red; */
+  max-width: 190px;
+}
+
+.btn-edit {
+  /* border: 2px solid red; */
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit,
+.hapus {
+  height: 30px;
+  width: 50px;
+  box-sizing: border-box;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  border: none;
+  box-shadow: 2px 2px 5px 0px black;
+  border-radius: 5px;
+}
+
+.hapus {
+  margin-right: auto;
+}
+
+.edit:hover,
+.hapus:hover {
+  transform: scale(1.05);
+}
+
+.edit:hover {
+  color: green;
+  box-shadow: 2px 2px 5px 0px green;
+}
+
+.hapus:hover {
+  color: red;
+  box-shadow: 2px 2px 5px 0px red;
+}
+
+.edit:active {
+  background-color: green;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px 0px rgb(0, 0, 0);
+}
+.hapus:active {
+  background-color: red;
+  color: white;
+  box-shadow: 2px 2px 5px 0px rgb(0, 0, 0);
+}
+
+/* ============= end card ======================================= */
+
+.footer {
+  z-index: 1;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+  background-color: #eaeaea;
+}
+
+.footer:hover {
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(0, 0, 0),
+    rgb(166, 166, 255),
+    rgb(202, 187, 159)
+  );
+  color: white;
+}
