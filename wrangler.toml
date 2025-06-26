@@ -1,0 +1,3 @@
+name = "your-project-name"
+main = "index.js"  # sesuaikan dengan nama file utama Anda
+compatibility_date = "2025-06-26"
